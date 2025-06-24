@@ -18,11 +18,11 @@ $(document).ready(function () {
 
     const $tabs = $(".more-serv-descr .one-tab-serv");
 
-    $tabs.stop(true, true).fadeOut(200); // ховаємо всі
+    $tabs.stop(true, true).slideUp(0); // ховаємо всі
 
     // показуємо потрібну вкладку після затримки
     setTimeout(() => {
-      $tabs.eq(index).stop(true, true).fadeIn(200);
+      $tabs.eq(index).stop(true, true).slideDown(400);
     }, 200);
   });
 
@@ -111,7 +111,7 @@ $(document).ready(function () {
 });
 
 if (window.innerWidth < 550 ) {
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiperMap', {
   // Optional parameters
   //direction: 'vertical',
   loop: true,
@@ -158,3 +158,58 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, { threshold: 0.6 });
 
 counters.forEach(counter => observer.observe(counter));
+
+var swiper = new Swiper(".mySwiperFeed", {
+  loop: true,
+  slidesPerView: "auto",
+  pagination: {
+    el: ".pages_nav",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".one-feed-arr.next",
+    prevEl: ".one-feed-arr.prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    769: {
+      slidesPerView: "auto",
+    }
+  }
+});
+
+jQuery(document).ready(function($) {
+  $('.faq-right-one-top').on('click', function() {
+    const $current = $(this).parent();
+
+    // Закриваємо всі відкриті
+    $('.faq-right-one').not($current).removeClass('open').find('.faq-right-one-descr').slideUp(200);
+
+    // Перемикаємо поточний
+    $current.toggleClass('open');
+    $current.find('.faq-right-one-descr').stop(true, true).slideToggle(200);
+  });
+});
+
+$(".search-bt").on("click", function () {
+  $('.search').show(0);
+});
+$(".search-close").on("click", function () {
+  $('.search').hide(0);
+});
+
+
+$(document).ready(function() {
+  $('.show-modal').on('click', function() {
+    const modalId = $(this).data('modal');
+    $('#' + modalId).addClass('show');
+    $("body").addClass('showModal');
+  });
+
+  $('.modal').on('click', '.modal-close, .modal-overlay', function() {
+    $(this).closest('.modal').removeClass('show');
+    $("body").removeClass('showModal');
+  });
+});
