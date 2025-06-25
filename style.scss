@@ -76,7 +76,7 @@ a:hover {
 }
 
 .hide-mob {
-  display: none;
+  
 	@media (max-width: 1150px) {
 		display: none !important;
 	}
