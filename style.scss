@@ -607,6 +607,10 @@ header {
 
   .prim-bt {
     padding: 0 52px;
+    
+     @media (max-width: 550px) {
+      padding: 0 48px;
+    }
   }
   
   .third-bt {
@@ -639,7 +643,7 @@ header {
   
   @media (max-width: 550px) {
 	height: 48px;
-	padding: 0 48px;
+	padding: 0 24px;
 	font-size: 14px;
   }
 
@@ -1476,9 +1480,13 @@ header {
   line-height: 16px;
 }
 .ask {
+  .prim-bt {
+    @media (max-width: 550px) {
+      padding: 0 14px;
+    }
+  }
 }
-.prim-bt {
-}
+
 .about-photo {
   width: 526px;
   margin-top: -60px;
