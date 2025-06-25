@@ -44,56 +44,96 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   const $svg = $(".map svg");
+  let hideTimeout = null;
+  let currentGroup = null;
 
   function positionBlock($g) {
-  const id = $g.attr("id");
-  const $dot = $g.find("path.dot");
-  if ($dot.length === 0) return;
+    const id = $g.attr("id");
+    const $dot = $g.find("path.dot");
+    if ($dot.length === 0) return;
 
-  const rect = $dot[0].getBoundingClientRect();
-  const $map = $(".map");
-  const mapRect = $map[0].getBoundingClientRect();
+    const rect = $dot[0].getBoundingClientRect();
+    const $map = $(".map");
+    const mapRect = $map[0].getBoundingClientRect();
 
-  const x = rect.left - mapRect.left + rect.width / 2;
-  const y = rect.top - mapRect.top;
+    const x = rect.left - mapRect.left + rect.width / 2;
+    const y = rect.top - mapRect.top;
 
-  const $block = $(`.hover-map-bl[data-obl="${id}"]`);
-  if ($block.length) {
-    const blockWidth = $block.outerWidth();
-    const blockHeight = $block.outerHeight();
+    const $block = $(`.hover-map-bl[data-obl="${id}"]`);
+    if ($block.length) {
+      const blockWidth = $block.outerWidth();
+      const blockHeight = $block.outerHeight();
 
-    $block.css({
-      left: x - blockWidth / 2 + "px",
-      top: y - blockHeight - 15 + "px",
-      display: "block",
-    });
+      $block.css({
+        left: x - blockWidth / 2 + "px",
+        top: y - blockHeight - 15 + "px",
+        display: "block",
+      });
+    }
   }
-}
 
+  function showBlock($g) {
+    clearTimeout(hideTimeout);
 
-  $svg.on("click", "g[id]", function () {
-    const $g = $(this);
+    const id = $g.attr("id");
+    const $block = $(`.hover-map-bl[data-obl="${id}"]`);
 
-    $svg.find("g.active").removeClass("active");
+    // Якщо вже показується потрібний блок — нічого не робимо
+    if (currentGroup && currentGroup.attr("id") === id) return;
+
+    // Запускаємо таймер на приховування попереднього блоку
+    if (currentGroup) {
+      const prevId = currentGroup.attr("id");
+      const $prevBlock = $(`.hover-map-bl[data-obl="${prevId}"]`);
+      $prevBlock.stop(true).fadeOut(200);
+      $svg.find("g.active").removeClass("active");
+    }
+
+    currentGroup = $g;
     $g.addClass("active");
-    $(".hover-map-bl").hide();
-
     positionBlock($g);
+  }
+
+  function scheduleHide() {
+    clearTimeout(hideTimeout);
+    hideTimeout = setTimeout(() => {
+      $(".hover-map-bl").fadeOut(200);
+      $svg.find("g.active").removeClass("active");
+      currentGroup = null;
+    }, 1000); // затримка на приховування при втраті фокусу
+  }
+
+  $svg.on("mouseenter", "g[id]", function () {
+    clearTimeout(hideTimeout);
+    showBlock($(this));
+  });
+
+  $svg.on("mouseleave", "g[id]", function () {
+    scheduleHide();
+  });
+
+  $(".hover-map-bl").on("mouseenter", function () {
+    clearTimeout(hideTimeout);
+  });
+
+  $(".hover-map-bl").on("mouseleave", function () {
+    scheduleHide();
   });
 
   $(".hover-map-close").on("click", function () {
-    $(this).closest(".hover-map-bl").hide();
-    $("svg g.active").removeClass("active");
+    $(this).closest(".hover-map-bl").fadeOut(200);
+    $svg.find("g.active").removeClass("active");
+    currentGroup = null;
   });
 
   $(window).on("resize", function () {
-    const $active = $("svg g.active");
-    if ($active.length) {
+    if (currentGroup) {
       $(".hover-map-bl").hide();
-      positionBlock($active);
+      positionBlock(currentGroup);
     }
   });
 });
+
 
 
 $(document).ready(function () {

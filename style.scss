@@ -1160,9 +1160,6 @@ header {
 }
 .more-serv-list {
   position: relative;
-  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25),
-    0px 0px 15px rgba(0, 0, 0, 0.07);
-  background: #ffffff;
   padding-top: 4px;
   display: flex;
 
@@ -1181,7 +1178,9 @@ header {
 .more-serv-list-menu {
   width: 416px;
   flex: 0 0 auto;
-  background-color: #0093d5;
+  //background-color: #0093d5;
+  position: relative;
+  z-index: 1;
 
   @media (max-width: 1340px) {
 	width: 356px;
@@ -1306,6 +1305,9 @@ header {
   padding: 48px;
   width: 100%;
   max-height: 100%;
+  background: #ffffff;
+   box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0px 0px 15px rgba(0, 0, 0, 0.07);
 
   @media (max-width: 966px) {
 	padding: 0;
@@ -1332,6 +1334,17 @@ header {
       background-repeat: no-repeat;
       background-position: left center;
       background-image: url(./images/more-serv.svg);
+
+      a {
+        color: #1f1f24;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s;
+
+        &:hover {
+          border-bottom: 1px solid #1f1f24;
+        }
+      }
 
 	  @media (max-width: 550px) {
 		background-position: left top;
