@@ -121,7 +121,9 @@ const swiper = new Swiper('.swiperMap', {
 });
 }
 
-AOS.init();
+AOS.init({
+  //once: true, // Щоб один раз малювалось
+});
 
 function animateCounter(el, target, duration = 2000) {
   let startTime = null;
