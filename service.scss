@@ -466,7 +466,26 @@ h3, .h3 {
   @media (max-width: 550px) {
 	margin-bottom: 24px;
   }
+
+  &.aos-animate .one-serv-cust {
+    opacity: 1;
+    transform: translate(0, 0); // скидання трансформації
+  }
 }
+
+@for $i from 1 through 8 {
+    .one-serv-cust:nth-child(#{$i}) {
+      transition-delay: #{($i - 1) * 100}ms;
+
+      // Непарні — зліва, парні — справа
+      transform: translateY(20px) translateX(if($i % 2 == 1, -30px, 30px));
+
+      &.aos-animate {
+        transform: translate(0, 0);
+      }
+    }
+  }
+
 .one-serv-cust {
   padding: 20px 20px 20px 62px;
   width: calc(50% - 0.5px);
@@ -474,6 +493,9 @@ h3, .h3 {
   position: relative;
   text-decoration: none;
   color: #1f1f24;
+  opacity: 0;
+  transform: translateY(20px); // базовий зсув вниз
+  transition: opacity 0.5s ease, transform 0.5s ease;
 
   @media (max-width: 966px) {
 	width: 100%;
