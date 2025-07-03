@@ -1,0 +1,203 @@
+.contact-page {
+  
+  padding: 80px 0 167px;
+  background-image: url(../images/ukraine.jpg);
+  background-repeat: no-repeat;
+  background-position: top 68px center;
+    
+
+    @media (max-width: 966px) {
+      flex-direction: column;
+      background-size: contain;
+      padding: 40px 0 34px;
+    }
+
+    @media (max-width: 550px) {
+      gap: 32px;
+      background-position: top 130px center;
+    }
+}
+
+.contact-page-top {
+    display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.cont-page-left {
+  padding-top: 8px;
+  width: 416px;
+  flex: 0 0 auto;
+
+  @media (max-width: 966px) {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  h1 {
+    @media (max-width: 550px) {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .cont-page-office-lest {
+    @media (max-width: 966px) {
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 550px) {
+      gap: 16px;
+    }
+  }
+}
+.cont-page-office {
+
+  @media (max-width: 966px) and (min-width: 550px) {
+    display: flex;
+    gap: 24px;
+  }
+
+  @media (max-width: 966px) {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+.cont-page-top {
+  color: #8C8C92;
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 24px;
+
+  @media (max-width: 966px) {
+    width: 100%;
+  }
+}
+.cont-page-office-lest {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  @media (max-width: 966px) {
+    gap: 24px;
+  }
+
+
+  .cont-page-one-l {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .cont-page-one-l-ico {
+    width: 20px;
+  }
+  .cont-page-one-l-name {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #1F1F24;
+
+    &.up {
+      text-transform: uppercase;
+    }
+
+    a {
+      color: #1F1F24;
+    }
+
+    &.red {
+      color: #f50057;
+    }
+  }
+
+}
+
+.cont-page-right {
+  width: 100%;
+
+  @media (max-width: 966px) {
+    display: none;
+  }
+}
+
+.big-map {
+    background-image: url(../images/big-map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 344px;
+    width: 100%;
+    filter: drop-shadow(0px 4px 15px rgba(55, 71, 79, 0.2));
+}
+
+.deal {
+    padding-top: 40px;
+    display: flex;
+
+    @media (max-width: 966px) {
+      width: 100%;
+      padding-top: 0;
+    }
+}
+
+.cont-reg {
+        margin-top: 60px;
+
+        @media (max-width: 550px) {
+          margin-top: 24px;
+        }
+    .regions-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        &.aos-animate .one-reg-cont-page {
+            opacity: 1;
+            transform: translate(0, 0); // скидання трансформації
+        }
+    }
+}
+
+@for $i from 1 through 10 {
+  .one-reg-cont-page:nth-child(#{$i}) {
+    transition-delay: #{($i - 1) * 200}ms;
+
+    // Непарні — зліва, парні — справа
+    transform: translateY(20px) translateX(0px);
+
+    &.aos-animate {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.cont-reg-tit {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8C8C92;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.one-reg-cont-page {
+  width: calc(100% / 4);
+  border: 1px solid #7B7B81;
+  padding: 24px 10px 24px 24px;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  opacity: 0;
+    transform: translateY(20px); // базовий зсув вниз
+    transition: opacity 1s ease, transform 1s ease;
+
+  @media (max-width: 1150px) {
+    width: calc(100% / 3);
+  }
+
+  @media (max-width: 966px) {
+    width: calc(100% / 2);
+  }
+
+  @media (max-width: 966px) {
+    width: 100%;
+  }
+}

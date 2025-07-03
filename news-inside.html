@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico" />
+
+    <title>Сайт</title>
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/service.css" rel="stylesheet" type="text/css" />
+    <link href="css/news.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header>
+        <div class="container">
+          <div class="bg-moadal-opened"></div>
+          <div class="header-in">
+            <div class="logo">
+              <a href="#">
+                <img src="./images/logo.svg" width="90" height="28" alt="" />
+              </a>
+            </div>
+            <div class="header-univ">
+              <div class="group-menu">
+                <div class="close-menu">
+                  <img src="./images/close-menu.svg" alt="" />
+                </div>
+                <nav>
+                  <ul>
+                    <li class="hide-desc active">
+                      <a href="#">Головна</a>
+                    </li>
+                    <li>
+                      <a href="#">Послуги</a>
+                    </li>
+                    <li>
+                      <a href="#">Про компанію</a>
+                    </li>
+                    <li>
+                      <a href="#">Новини</a>
+                    </li>
+                    <li>
+                      <a href="#">Вакансії</a>
+                    </li>
+                    <li>
+                      <a href="#">Контакти</a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <div class="mob-part-head-info">
+                  <div class="header-phone">
+                    <div class="phone-ico">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2 3L6.5 2L9 6.5L6.375 8.59375C7.5 10.75 9.25 12.5 11.4062 13.625L13.5 11L18 13.5L17 18H16C8.25 18 2 11.75 2 4V3Z"
+                          fill="#4ACA22"
+                        />
+                      </svg>
+                    </div>
+                    <a class="active-phone" href="#"> (044) 494 21 48 </a>
+                  </div>
+                  <div class="heder-mail">
+                    <a href="#">
+                      <i>
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2 4H18V6.5L10 12L2 6.5V4ZM2 16V7.71875L9.40625 12.8438L10 13.2188L10.5625 12.8438L18 7.71875V16H2Z"
+                            fill="#4ACA22"
+                          />
+                        </svg>
+                      </i>
+                      <span> sales@eco.kiev.ua </span>
+                    </a>
+                  </div>
+
+                  <div class="call-me">
+                    <i>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.5 2L9 6.5L6.375 8.59375C7.5 10.75 9.25 12.5 11.4062 13.625L13.5 11L18 13.5L17 18H16C8.25 18 2 11.75 2 4V3L6.5 2ZM17.2812 3.78125L13.5312 7.5H15.25H16V9H15.25H11.75H11V8.25V4.75V4H12.5V4.75V6.4375L16.2188 2.71875L16.75 2.21875L17.8125 3.25L17.2812 3.78125Z"
+                          fill="#4ACA22"
+                        />
+                      </svg>
+                    </i>
+                    <span> Зворотній дзвінок </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="header-right">
+                <div class="search-bt">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13 6.5C13 7.9375 12.5312 9.28125 11.75 10.3438L15.1875 13.8125L15.9062 14.5L14.5 15.9375L13.7812 15.2188L10.3125 11.75C9.25 12.5625 7.90625 13 6.5 13C2.90625 13 0 10.0938 0 6.5C0 2.9375 2.90625 0 6.5 0C10.0625 0 13 2.9375 13 6.5ZM6.5 11C8.96875 11 11 9 11 6.5C11 4.03125 8.96875 2 6.5 2C4 2 2 4.03125 2 6.5C2 9 4 11 6.5 11Z"
+                      fill="#1F1F24"
+                    />
+                  </svg>
+                </div>
+
+                <div class="heder-mail">
+                  <a href="#">
+                    <i>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2 4H18V6.5L10 12L2 6.5V4ZM2 16V7.71875L9.40625 12.8438L10 13.2188L10.5625 12.8438L18 7.71875V16H2Z"
+                          fill="#4ACA22"
+                        />
+                      </svg>
+                    </i>
+                    <span> sales@eco.kiev.ua </span>
+                  </a>
+                </div>
+                <div class="header-phone">
+                  <div class="phone-ico">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.4375L9.28125 14.7188L3.28125 8.71875L2.5625 8L4 6.59375L4.6875 7.3125L10 12.5938L15.2812 7.3125L16 6.59375L17.4062 8L16.6875 8.71875L10.6875 14.7188L10 15.4375Z"
+                        fill="#4ACA22"
+                      />
+                    </svg>
+                  </div>
+                  <a class="active-phone" href="#"> (044) 494 21 48 </a>
+
+                  <div class="drop-phones">
+                    <ul>
+                      <li>
+                        <a href="#">(067) 432 78 02</a>
+                      </li>
+                      <li>
+                        <a href="#">(050) 716 12 53</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="call-me">
+                  <i>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.5 2L9 6.5L6.375 8.59375C7.5 10.75 9.25 12.5 11.4062 13.625L13.5 11L18 13.5L17 18H16C8.25 18 2 11.75 2 4V3L6.5 2ZM17.2812 3.78125L13.5312 7.5H15.25H16V9H15.25H11.75H11V8.25V4.75V4H12.5V4.75V6.4375L16.2188 2.71875L16.75 2.21875L17.8125 3.25L17.2812 3.78125Z"
+                        fill="#4ACA22"
+                      />
+                    </svg>
+                  </i>
+                  <span> Зворотній дзвінок </span>
+                </div>
+                <div class="burger">
+                  <img src="./images/burger-ico.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- / header -->
+
+      <!-- search -->
+      <div class="search">
+        <div class="container">
+          <div class="search-body">
+            <div class="search-wrap">
+              <input type="text" placeholder="Пошук по сайту">
+              <div class="search-close">
+                <img src="./images/close-ico.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search -->
+
+      <!-- news in -->
+       <main class="">
+
+        <div class="post-page">
+          <div class="container">
+
+            <div class="broad">
+                <a href="#">Новини</a>
+                <span class="br-ico"></span>
+                <span>Реєстрація свердловини в Державному реєстрі артезіанських свердловин</span>
+              </div>
+
+            <!-- post -->
+            <div class="post-page-in">
+              <div class="post-wrap">
+                <!-- top -->
+                <div class="post-wrap-top" style="background-image: url(./images/news-in-hero.jpg);">
+                  <!-- info -->
+                  <div class="post-wrap-info">
+                    
+                    <div class="post-wrap-tags">
+                      <ul>
+                        <li class="post-wrap-date">
+                          01 квітня 2025
+                        </li>
+                        <li>
+                          <a href="#">Екологія</a>
+                        </li>
+                        <li>
+                          <a href="#">Законодавство</a>
+                        </li>
+                        <li>
+                          <a href="#">Нові проекти</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- / info -->
+
+                  <h1>
+                    Реєстрація свердловини в Державному реєстрі артезіанських свердловин
+                  </h1>
+                </div>
+                <!-- / top -->
+
+                <div class="post-descr post-text">
+                  <p>
+                    Відповідно до «Порядку державного обліку артезіанських свердловин, облаштування їх засобами вимірювання об'єму видобутих підземних вод», затвердженого постановою Кабінету Міністрів України від 08.10.2012 № 963, до Реєстру артезіанських свердловин включаються відомості про всі свердловини, у тому числі недіючі, незалежно від місця розташування.
+                  </p>
+                  <p>
+                    Пропонуємо послугу реєстрації свердловини в Державному реєстрі артезіанських свердловин на підставі даних, що містяться у паспортах артезіанських свердловин.
+                    Внесення даних в Реєстр здійснюється через особистий кабінет водокористувачем чи уповповноваженій особі за цифровим електронним підписом.
+                    Процедура Реєстрації свердловини включає внесення:
+                  </p>
+
+                  <ul>
+                    <li>підготовка додатків.</li>
+                    <li>загальної інформації про свердловину (місце розташування, початок експлуатації, географічні координати свердловини, абсолютну відмітку устя, тип свердловини, призначення тощо…);</li>
+                    <li>експлуатаційні характеристики свердловини (глибину, дебіт, зниження рівня, тощо);</li>
+                    <li>дані з спецдозволу на користувння надрами (при наявності);</li>
+                    <li>дані з дозволу на спеціальне водокористування (при наявності);</li>
+                    <li>опис порід (при наявності);</li>
+                    <li>характеристику зони суворого режиму;</li>
+                    <li>дані по обладнанню свердловини (фільтр, насос, засоби обліку);</li>
+                  </ul>
+
+                  <p>
+                    Наші фахівці через програми віддаленого доступу або у Вашій присутності шляхом застосування Вашого ЕЦП проходять процедуру внесення даних в Реєстр.
+                  </p>
+
+                  <blockquote>
+                    <p>
+                      Важливо! В зв’язку з впровадженням та функціонуванням Реєстру, відтепер, при отриманні дозволу на спеціальне водокористування, обов’язково перевіряється  наявність свердловин у зазначеному Реєстрі.
+                    </p>
+                    <p>
+                      Тобто, навіть, якщо Ваша свердловина пробурена дуже давно і Ви вже отримували дозволи на спеціальне водокористування, необхідно зареєструвати свердловину. Відсутність свердловини у Реєстрі може бути підставою відмови у видачі Дозволу.
+                    </p>
+                  </blockquote>
+                </div>
+
+                <!-- pagi -->
+                 <div class="page-pagi">
+                  <!-- prev -->
+                  <div class="pagi-step pagi-prev dis">
+                    <a href="#">
+                      <i>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.4375 16.5312L5.71875 10.5625C5.5625 10.375 5.5 10.1875 5.5 10C5.5 9.84375 5.5625 9.65625 5.6875 9.5L11.4062 3.53125C11.6875 3.21875 12.1875 3.21875 12.4688 3.5C12.7812 3.78125 12.7812 4.25 12.5 4.5625L7.28125 10L12.5312 15.5C12.8125 15.7812 12.8125 16.2812 12.5 16.5625C12.2188 16.8438 11.7188 16.8438 11.4375 16.5312Z" fill="#7B7B81"/>
+                        </svg>
+                      </i>
+                      попередня
+                    </a>
+                  </div>
+                  <!-- / prev -->
+                   
+                  <!-- next -->
+                  <div class="pagi-step pagi-next">
+                    <a href="#">
+                      наступна
+                      <i>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.4375 16.5312L5.71875 10.5625C5.5625 10.375 5.5 10.1875 5.5 10C5.5 9.84375 5.5625 9.65625 5.6875 9.5L11.4062 3.53125C11.6875 3.21875 12.1875 3.21875 12.4688 3.5C12.7812 3.78125 12.7812 4.25 12.5 4.5625L7.28125 10L12.5312 15.5C12.8125 15.7812 12.8125 16.2812 12.5 16.5625C12.2188 16.8438 11.7188 16.8438 11.4375 16.5312Z" fill="#01579B"/>
+                        </svg>
+                      </i>
+                    </a>
+                  </div>
+                  <!-- / next -->
+                 </div>
+                <!-- / pagi -->
+
+              </div>
+
+               <!-- aside -->
+              <aside class="aside-post">
+                <div class="one-side-bar" data-aos="fade-left"
+              data-aos-duration="700"
+              data-aos-delay="100">
+                  <div class="one-side-title">
+                    <div class="h3">
+                      Найбільш затребувані послуги
+                    </div>
+                  </div>
+                  <div class="one-side-menu">
+                    <ul>
+                      <li><a href="#">Оцінка впливу на довкілля</a></li>
+                      <li><a href="#">Інтегрований довкіллєвий дозвіл</a></li>
+                      <li><a href="#">Дозвіл на здійснення операцій з оброблення відходів</a></li>
+                      <li><a href="#">Дозвіл на викиди в атмосферне повітря</a></li>
+                      <li><a href="#">Дозвіл на спеціальне водокористування</a></li>
+                      <li><a href="#">Післяпроектний моніторинг ОВД</a></li>
+                      <li><a href="#">Екологічний аудит</a></li>
+                      <li><a href="#">Моніторинг, звітність та верифікація викидів парникових газів</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="live-order">
+                    <button class="prim-bt show-modal" data-modal="cont-modal">залишити заявку</button>
+                  </div>
+
+                  <div class="svg-side-anim">
+                    <svg width="525" height="238" viewBox="0 0 525 238" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M167.209 41C210.287 41 245.209 75.9217 245.209 119C245.209 162.078 210.287 197 167.209 197C124.131 197 89.209 162.078 89.209 119C89.209 75.9218 124.131 41 167.209 41Z" stroke="url(#paint0_linear_8217_10036)" stroke-width="80"/>
+                    <path d="M348.148 119C348.148 184.17 295.318 237 230.148 237C164.979 237 112.148 184.17 112.148 119C112.148 53.8304 164.979 0.999995 230.148 0.99999C295.318 0.999984 348.148 53.8304 348.148 119Z" stroke="#B9DEE1"/>
+                    <path d="M550.41 118.997L26.0042 118.997L0.999371 93.9921M0.999371 93.9921L26.0042 93.9921M0.999371 93.9921L0.999369 118.997" stroke="#B9DEE1"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_8217_10036" x1="49.209" y1="119" x2="285.209" y2="119" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#E3F2FD"/>
+                    <stop offset="1" stop-color="#F1F8E9"/>
+                    </linearGradient>
+                    </defs>
+                    </svg>
+
+                  </div>
+                </div>
+              </aside>
+              <!-- / aside -->
+            </div>
+            <!-- / post -->
+
+           
+          </div>
+        </div>
+          <!-- soc -->
+           <div class="soc" >
+            <div class="container">
+              <div class="soc-in"  data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="100">
+                <div class="soc-left">
+                  <div class="soc-img">
+                    <img src="./images/soc.jpg" alt="">
+                  </div>
+                  <div class="soc-slog">
+                    Підписуйтесь, щоб не пропустити Актуальні новини екології - у Telegram і Facebook
+                  </div>
+                </div>
+
+                <div class="soc-right">
+                  <a href="#" class="soc-bt face">
+                    <i>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 12C24 5.4 18.6 0 12 0C5.4 0 0 5.4 0 12C0 18 4.35 22.95 10.05 23.85V15.45H7.05V12H10.05V9.3C10.05 6.3 11.85 4.65 14.55 4.65C15.9 4.65 17.25 4.95 17.25 4.95V7.95H15.75C14.25 7.95 13.8 8.85 13.8 9.75V12H17.1L16.5 15.45H13.65V24C19.65 23.1 24 18 24 12Z" fill="white"/>
+                      </svg>
+                    </i>
+                    <span>
+                      Facebook
+                    </span>
+                  </a>
+                  <a href="#" class="soc-bt tel">
+                    <i>
+                      <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.14987 8.56244C8.59231 5.75557 12.8883 3.90512 15.0378 3.01107C21.175 0.45837 22.4503 0.0149404 23.2815 0.000141954C23.4643 -0.00292234 23.8731 0.0423843 24.1379 0.257234C24.3614 0.438648 24.4229 0.683713 24.4524 0.855714C24.4818 1.02771 24.5185 1.41954 24.4893 1.7257C24.1567 5.22014 22.7177 13.7002 21.9856 17.6141C21.6758 19.2702 21.0658 19.8254 20.4753 19.8798C19.1919 19.9979 18.2174 19.0317 16.9744 18.2169C15.0294 16.9419 13.9305 16.1482 12.0425 14.904C9.86064 13.4662 11.2751 12.6759 12.5185 11.3844C12.844 11.0464 18.4985 5.90319 18.6079 5.43662C18.6216 5.37827 18.6343 5.16076 18.5051 5.04591C18.3759 4.93105 18.1851 4.97033 18.0475 5.00156C17.8524 5.04584 14.7452 7.0996 8.72584 11.1628C7.84386 11.7685 7.04499 12.0636 6.32924 12.0481C5.54017 12.031 4.02233 11.6019 2.89397 11.2352C1.50999 10.7853 0.410032 10.5474 0.505814 9.7834C0.555703 9.38545 1.10372 8.97846 2.14987 8.56244Z" fill="white"/>
+                      </svg>
+                    </i>
+                    <span>
+                      Telegram
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+           </div>
+          <!-- soc -->
+       </main>
+      <!-- serv -->
+    
+    
+      <!-- footer -->
+      <footer>
+        <div class="container">
+          <!-- footer-top -->
+          <div class="footer-top">
+            <div class="footer-top-left">
+              <div class="footer-logo">
+                <img src="./images/footer-logo.svg" alt="" />
+              </div>
+              <div class="slogan">Ваш надійний партнер в сфері екології</div>
+            </div>
+            <div class="footer-top-right">
+              <a href="#" class="third-bt">Oтримати консультацію</a>
+            </div>
+          </div>
+          <!-- / footer-top -->
+
+          <!-- footer serv -->
+          <div class="footer-serv">
+            <div class="footer-tit">Основні послуги</div>
+            <div class="footer-serv-in">
+              <ul>
+                <li>
+                  <a href="#"> Оцінка впливу на довкілля </a>
+                </li>
+                <li>
+                  <a href="#"> Дозвіл на викиди в атмосферне повітря </a>
+                </li>
+                <li>
+                  <a href="#"> Інтегрований довкіллєвий дозвіл </a>
+                </li>
+                <li>
+                  <a href="#"> Дозвіл на спеціальне водокористування </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Дозвіл на здійснення операцій з оброблення відходів
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> Післяпроектний моніторинг ОВД </a>
+                </li>
+              </ul>
+
+              <div class="foot-all-serv">
+                <a class="green-link" href="#">
+                  Переглянути всі послуги
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- / footer serv -->
+
+          <!-- footer-cont -->
+          <div class="footer-cont">
+            <div class="footer-cont-left">
+              <div class="footer-tit">Контактна інформація</div>
+              <div class="footer-cont-office">
+                <div class="footer-cont-top">
+                  Головний офіс:
+                </div>
+                <div class="footer-cont-office-lest">
+                    <div class="footer-cont-one-l">
+                      <div class="footer-cont-one-l-ico">
+                        <img src="./images/cont-ico-1.svg" alt="" />
+                      </div>
+                      <div class="footer-cont-one-l-name up">
+                        Київ, Просп. Соборності, 19, оф. 219 
+                      </div>
+                    </div>
+                    <div class="footer-cont-one-l">
+                      <div class="footer-cont-one-l-ico">
+                        <img src="./images/cont-ico-2.svg" alt="" />
+                      </div>
+                      <div class="footer-cont-one-l-name"><a href="#">+38 (044) 494-21-48</a></div>
+                    </div>
+                    <div class="footer-cont-one-l">
+                      <div class="footer-cont-one-l-ico">
+                        <img src="./images/cont-ico-3.svg" alt="" />
+                      </div>
+                      <div class="footer-cont-one-l-name"><a href="#">sales@eco.kiev.ua</a></div>
+                    </div>
+                    <div class="footer-cont-one-l">
+                      <div class="footer-cont-one-l-ico">
+                        <img src="./images/cont-ico-4.svg" alt="" />
+                      </div>
+                      <div class="footer-cont-one-l-name">Пн-Пт: 9:00–18:00</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-cont-right">
+              <div class="map-foot">
+                <img src="./images/map.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="regions">
+            <div class="regions-top">
+                Регіональні представництва:
+            </div>
+            <div class="regions-list">
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Дніпро
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (056) 767-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">dp@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Львів
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (032) 257-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">lviv@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Харків
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (057) 755-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">khar@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Одеса
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (048) 793-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">od@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Вінниця
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (056) 767-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">xx@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Полтава
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (032) 257-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">xx@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+            </div>
+          </div>
+          <!-- footer-cont -->
+
+          <!-- other-links -->
+           <div class="footer-other-links">
+            <div class="left-other">
+              <ul>
+                <li>
+                  <a class="green-link" href="#">
+                    Політика конфіденційності
+                  </a>
+                </li>
+                <li>
+                  <a class="green-link" href="#">
+                    Політика обробки персональних даних
+                  </a>
+                </li>
+                <li>
+                  <a class="green-link" href="#">
+                    Угода користувача
+                  </a>
+                </li>
+                <li>
+                  <a class="green-link" href="#">
+                    Правила використання сайту
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="right-other">
+              <div class="foot-soc">
+                <ul>
+                  <li>
+                    <a class="soc-1" href="#">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <p<path d="M16 8C16 3.6 12.4 0 8 0C3.6 0 0 3.6 0 8C0 12 2.9 15.3 6.7 15.9V10.3H4.7V8H6.7V6.2C6.7 4.2 7.9 3.1 9.7 3.1C10.6 3.1 11.5 3.3 11.5 3.3V5.3H10.5C9.5 5.3 9.2 5.9 9.2 6.5V8H11.4L11 10.3H9.1V16C13.1 15.4 16 12 16 8Z" fill="white"/>
+                      </svg>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a class="soc-2" href="#">
+                      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.09992 5.7083C5.39487 3.83705 8.25885 2.60341 9.69185 2.00738C13.7834 0.30558 14.6335 0.00996026 15.1877 9.46359e-05C15.3095 -0.00194823 15.582 0.0282562 15.7586 0.171489C15.9076 0.292432 15.9486 0.455809 15.9683 0.570476C15.9879 0.685143 16.0123 0.946358 15.9929 1.15046C15.7712 3.48009 14.8118 9.13349 14.3237 11.7427C14.1172 12.8468 13.7105 13.217 13.3168 13.2532C12.4613 13.3319 11.8116 12.6878 10.9829 12.1446C9.68624 11.2946 8.95369 10.7654 7.69503 9.936C6.24042 8.97744 7.18338 8.4506 8.01236 7.58959C8.22931 7.36426 11.999 3.93546 12.0719 3.62441C12.0811 3.58551 12.0895 3.44051 12.0034 3.36394C11.9172 3.28737 11.7901 3.31355 11.6983 3.33438C11.5683 3.36389 9.4968 4.73307 5.48389 7.4419C4.89591 7.84565 4.36333 8.04237 3.88616 8.03207C3.36012 8.0207 2.34822 7.73463 1.59598 7.49011C0.673328 7.19019 -0.0599784 7.03162 0.00387615 6.52227C0.0371355 6.25697 0.402482 5.98564 1.09992 5.7083Z" fill="white"/>
+                      </svg>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a class="soc-3" href="#">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6 2.3C12.1 0.8 10.1 0 8 0C3.6 0 0 3.6 0 8C0 9.4 0.400006 10.8 1.10001 12L0 16L4.20001 14.9C5.40001 15.5 6.7 15.9 8 15.9C12.4 15.9 16 12.3 16 7.9C16 5.8 15.1 3.8 13.6 2.3ZM8 14.6C6.8 14.6 5.60001 14.3 4.60001 13.7L4.39999 13.6L1.89999 14.3L2.60001 11.9L2.39999 11.6C1.69999 10.5 1.39999 9.3 1.39999 8.1C1.39999 4.5 4.4 1.5 8 1.5C9.8 1.5 11.4 2.2 12.7 3.4C14 4.7 14.6 6.3 14.6 8.1C14.6 11.6 11.7 14.6 8 14.6ZM11.6 9.6C11.4 9.5 10.4 9 10.2 9C10 8.9 9.89999 8.9 9.79999 9.1C9.69999 9.3 9.30001 9.7 9.20001 9.9C9.10001 10 8.99999 10 8.79999 10C8.59999 9.9 8.00001 9.7 7.20001 9C6.60001 8.5 6.20001 7.8 6.10001 7.6C6.00001 7.4 6.10001 7.3 6.20001 7.2C6.30001 7.1 6.4 7 6.5 6.9C6.6 6.8 6.60001 6.7 6.70001 6.6C6.80001 6.5 6.70001 6.4 6.70001 6.3C6.70001 6.2 6.30001 5.2 6.10001 4.8C6.00001 4.5 5.80001 4.5 5.70001 4.5C5.60001 4.5 5.49999 4.5 5.29999 4.5C5.19999 4.5 4.99999 4.5 4.79999 4.7C4.59999 4.9 4.10001 5.4 4.10001 6.4C4.10001 7.4 4.79999 8.3 4.89999 8.5C4.99999 8.6 6.29999 10.7 8.29999 11.5C9.99999 12.2 10.3 12 10.7 12C11.1 12 11.9 11.5 12 11.1C12.2 10.6 12.2 10.2 12.1 10.2C12 9.7 11.8 9.7 11.6 9.6Z" fill="white"/>
+                      </svg>
+
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+           </div>
+          <!-- other-links -->
+
+          <div class="foot-copy">
+                © 2025 SEC Ecology. Усі права захищено
+              </div>
+
+        </div>
+      </footer>
+      <!-- footer -->
+
+      <!-- modal -->
+       <div class="modal" id="cont-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-in">
+          <div class="modal-in-wrap">
+            <div class="modal-close">
+              <img src="./images/close-ico.svg" alt="">
+            </div>
+            <div class="cont-form-modal">
+              <div class="cont-form-modal-left">
+                <div class="cont-form-modal-logo">
+                  <img src="./images/logo.svg" alt="">
+                </div>
+                <div class="cont-form-modal-tit">
+                  Бажаєте надіслати нам запит?
+                </div>
+                <div class="cont-form-modal-info">
+                  Ми завжди на звязку- напишіть, і ми допоможемо!
+                </div>
+              </div>
+              <div class="cont-form-modal-right">
+                <div class="cont-form-modal-right-in">
+                   
+                    <!-- one inp -->
+                    <div class="form-cons-one">
+                      <input type="text" placeholder="Ваше ім’я">
+                    </div>
+                    <!-- one inp -->
+                    <!-- one inp -->
+                    <div class="form-cons-one">
+                      <input type="text" placeholder="Email">
+                    </div>
+                    <!-- one inp -->
+                    <!-- one inp -->
+                    <div class="form-cons-one reg">
+                      <input type="text" placeholder="Контактний телефон ">
+                    </div>
+                    <!-- one inp -->
+                  </div>
+                  <!-- one inp -->
+                  <div class="form-cons-one-are">
+                    <textarea name="" id="" placeholder="За бажанням, коротко опишіть Ваш запит"></textarea>
+                  </div>
+                  <!-- one inp -->
+                  <div class="send-form">
+                    <button class="prim-bt">Відправити</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      <!-- modal -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/init.js"></script>
+  </body>
+</html>

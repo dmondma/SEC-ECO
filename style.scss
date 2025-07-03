@@ -26,6 +26,11 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   color: #1F1F24;
+  padding-top: 72px;
+
+  @media (max-width: 550px) {
+    padding-top: 56px;
+  }
 
   &.showModal {
     position: relative;
@@ -90,27 +95,39 @@ a:hover {
 	}
 }
 
+:root {
+  --container-max: 1326px;
+}
+
+@media (max-width: 1340px) {
+  :root {
+    --container-max: 1146px;
+  }
+}
+
+@media (max-width: 1150px) {
+  :root {
+    --container-max: 966px;
+  }
+}
+
 .container {
-  max-width: 1326px;
+  max-width: var(--container-max);
   padding: 0 15px;
   width: 100%;
   margin: 0 auto;
+}
 
-  @media (max-width: 1340px) {
-    max-width: 1146px;
-  }
-
-  @media (max-width: 1150px) {
-    max-width: 966px;
-  }
-
-  @media (max-width: 966px) {
+@media (max-width: 966px) {
+  .container {
     min-width: 546px;
   }
+}
 
-  @media (max-width: 550px) {
+@media (max-width: 550px) {
+  .container {
     width: 100%;
-	min-width: 320px;
+    min-width: 320px;
   }
 }
 
@@ -121,6 +138,10 @@ header {
   width: 100%;
   background-color: #fff;
   z-index: 99;
+    border-bottom: 1px solid #D3D3D3;
+
+  @media (max-width: 996px) {
+  }
 }
 .header-in {
   height: 72px;
@@ -479,11 +500,8 @@ header {
 #hero {
   position: relative;
   overflow: hidden;
-  margin-top: 72px;
 
-  @media (max-width: 550px) {
-	margin-top: 56px;
-  }
+  
 
   &:after {
     content: "";
@@ -593,7 +611,7 @@ header {
     @media (max-width: 550px) {
       font-size: 26px;
       line-height: 38px;
-      margin-bottom: 32px;
+      margin-bottom: 20px;
     }
   }
 
@@ -605,7 +623,7 @@ header {
 	@media (max-width: 550px) {
 		font-size: 16px;
 		line-height: 24px;
-		margin-bottom: 24px;
+		margin-bottom: 32px;
 	}
   }
 }
@@ -658,6 +676,11 @@ header {
   &:hover {
     //background-color: #1b5e20;
     background-color: #64dd17;
+  }
+
+  &.min {
+    height: 48px;
+    font-size: 14px;
   }
 }
 
@@ -822,21 +845,21 @@ header {
   &.aos-animate .one-serv {
     opacity: 1;
     transform: translate(0, 0); // скидання трансформації
-  }
+    }
 }
 
 @for $i from 1 through 8 {
-    .one-serv:nth-child(#{$i}) {
-      transition-delay: #{($i - 1) * 100}ms;
+  .one-serv:nth-child(#{$i}) {
+    transition-delay: #{($i - 1) * 100}ms;
 
-      // Непарні — зліва, парні — справа
-      transform: translateY(20px) translateX(if($i % 2 == 1, -30px, 30px));
+    // Непарні — зліва, парні — справа
+    transform: translateY(20px) translateX(if($i % 2 == 1, -30px, 30px));
 
-      &.aos-animate {
-        transform: translate(0, 0);
-      }
+    &.aos-animate {
+      transform: translate(0, 0);
     }
   }
+}
 
 .one-serv {
   padding: 20px 20px 20px 62px;
@@ -931,8 +954,8 @@ header {
   margin-bottom: 33px;
 }
 .detal-bt {
-  height: 32px;
-  display: flex;
+  //height: 32px;
+  display: inline-block;
   align-items: center;
   font-size: 16px;
   font-weight: 500;
@@ -940,13 +963,30 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   color: #1f1f24;
+  padding-right: 28px;
+  position: relative;
+  padding: 6px 28px 6px 0px;
+  font-weight: 600;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-image: url(./images/detal-link.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    right: 0;
+    width: 20px;
+    height: 20px;
+  }
 
   i {
     transform: translateX(0);
   }
 
   &:hover {
-    i {
+    &:after {
       animation: slideLoop 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     }
   }
@@ -954,13 +994,13 @@ header {
 
 @keyframes slideLoop {
   0% {
-    transform: translateX(0);
+    transform: translate(0, -50%);
   }
   70% {
-    transform: translateX(5px);
+    transform: translate(5px, -50%);
   }
   100% {
-    transform: translateX(0);
+    transform: translate(0, -50%);
   }
 }
 
@@ -1999,6 +2039,10 @@ input {
   flex-wrap: wrap;
   margin-bottom: 80px;
 
+  @media (max-width: 550px) {
+    margin-bottom: 40px;
+  }
+
   // &.aos-animate .one-logo {
   //   opacity: 1;
   //   transform: translate(0, 0); // скидання трансформації
@@ -2051,7 +2095,7 @@ input {
   margin-bottom: -116px;
 
   @media (max-width: 550px) {
-    margin-bottom: 68px;
+    margin-bottom: 40px;
   }
 }
 
@@ -2072,6 +2116,10 @@ input {
 
   .swiper-slide {
     width: 356px;
+
+    @media (max-width: 1340px) {
+      width: 379px;
+    }
 
     @media (max-width: 966px) {
       width: 276px;
@@ -3122,3 +3170,32 @@ footer {
     }
   }
 }
+
+
+// OTHER 
+.top-page-info {
+    //padding: 40px 108px;
+    overflow: hidden;
+    padding: 40px 0px;
+    background: linear-gradient(90deg, #B0D8ED 0%, #D0EDC4 100%);
+
+    h1 {
+        margin-bottom: 12px;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 600;
+
+          @media (max-width: 550px) {
+              font-size: 28px;
+              line-height: 40px;
+              margin-bottom: 12px;
+          }
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+    }
+}
+// / OTHER

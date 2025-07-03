@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico" />
+
+    <title>Сайт</title>
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/service.css" rel="stylesheet" type="text/css" />
+    <link href="css/news.css" rel="stylesheet" type="text/css" />
+    <link href="css/vacantion.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header>
+        <div class="container">
+          <div class="bg-moadal-opened"></div>
+          <div class="header-in">
+            <div class="logo">
+              <a href="#">
+                <img src="./images/logo.svg" width="90" height="28" alt="" />
+              </a>
+            </div>
+            <div class="header-univ">
+              <div class="group-menu">
+                <div class="close-menu">
+                  <img src="./images/close-menu.svg" alt="" />
+                </div>
+                <nav>
+                  <ul>
+                    <li class="hide-desc active">
+                      <a href="#">Головна</a>
+                    </li>
+                    <li>
+                      <a href="#">Послуги</a>
+                    </li>
+                    <li>
+                      <a href="#">Про компанію</a>
+                    </li>
+                    <li>
+                      <a href="#">Новини</a>
+                    </li>
+                    <li>
+                      <a href="#">Вакансії</a>
+                    </li>
+                    <li>
+                      <a href="#">Контакти</a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <div class="mob-part-head-info">
+                  <div class="header-phone">
+                    <div class="phone-ico">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2 3L6.5 2L9 6.5L6.375 8.59375C7.5 10.75 9.25 12.5 11.4062 13.625L13.5 11L18 13.5L17 18H16C8.25 18 2 11.75 2 4V3Z"
+                          fill="#4ACA22"
+                        />
+                      </svg>
+                    </div>
+                    <a class="active-phone" href="#"> (044) 494 21 48 </a>
+                  </div>
+                  <div class="heder-mail">
+                    <a href="#">
+                      <i>
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2 4H18V6.5L10 12L2 6.5V4ZM2 16V7.71875L9.40625 12.8438L10 13.2188L10.5625 12.8438L18 7.71875V16H2Z"
+                            fill="#4ACA22"
+                          />
+                        </svg>
+                      </i>
+                      <span> sales@eco.kiev.ua </span>
+                    </a>
+                  </div>
+
+                  <div class="call-me">
+                    <i>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.5 2L9 6.5L6.375 8.59375C7.5 10.75 9.25 12.5 11.4062 13.625L13.5 11L18 13.5L17 18H16C8.25 18 2 11.75 2 4V3L6.5 2ZM17.2812 3.78125L13.5312 7.5H15.25H16V9H15.25H11.75H11V8.25V4.75V4H12.5V4.75V6.4375L16.2188 2.71875L16.75 2.21875L17.8125 3.25L17.2812 3.78125Z"
+                          fill="#4ACA22"
+                        />
+                      </svg>
+                    </i>
+                    <span> Зворотній дзвінок </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="header-right">
+                <div class="search-bt">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13 6.5C13 7.9375 12.5312 9.28125 11.75 10.3438L15.1875 13.8125L15.9062 14.5L14.5 15.9375L13.7812 15.2188L10.3125 11.75C9.25 12.5625 7.90625 13 6.5 13C2.90625 13 0 10.0938 0 6.5C0 2.9375 2.90625 0 6.5 0C10.0625 0 13 2.9375 13 6.5ZM6.5 11C8.96875 11 11 9 11 6.5C11 4.03125 8.96875 2 6.5 2C4 2 2 4.03125 2 6.5C2 9 4 11 6.5 11Z"
+                      fill="#1F1F24"
+                    />
+                  </svg>
+                </div>
+
+                <div class="heder-mail">
+                  <a href="#">
+                    <i>
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2 4H18V6.5L10 12L2 6.5V4ZM2 16V7.71875L9.40625 12.8438L10 13.2188L10.5625 12.8438L18 7.71875V16H2Z"
+                          fill="#4ACA22"
+                        />
+                      </svg>
+                    </i>
+                    <span> sales@eco.kiev.ua </span>
+                  </a>
+                </div>
+                <div class="header-phone">
+                  <div class="phone-ico">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 15.4375L9.28125 14.7188L3.28125 8.71875L2.5625 8L4 6.59375L4.6875 7.3125L10 12.5938L15.2812 7.3125L16 6.59375L17.4062 8L16.6875 8.71875L10.6875 14.7188L10 15.4375Z"
+                        fill="#4ACA22"
+                      />
+                    </svg>
+                  </div>
+                  <a class="active-phone" href="#"> (044) 494 21 48 </a>
+
+                  <div class="drop-phones">
+                    <ul>
+                      <li>
+                        <a href="#">(067) 432 78 02</a>
+                      </li>
+                      <li>
+                        <a href="#">(050) 716 12 53</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="call-me">
+                  <i>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.5 2L9 6.5L6.375 8.59375C7.5 10.75 9.25 12.5 11.4062 13.625L13.5 11L18 13.5L17 18H16C8.25 18 2 11.75 2 4V3L6.5 2ZM17.2812 3.78125L13.5312 7.5H15.25H16V9H15.25H11.75H11V8.25V4.75V4H12.5V4.75V6.4375L16.2188 2.71875L16.75 2.21875L17.8125 3.25L17.2812 3.78125Z"
+                        fill="#4ACA22"
+                      />
+                    </svg>
+                  </i>
+                  <span> Зворотній дзвінок </span>
+                </div>
+                <div class="burger">
+                  <img src="./images/burger-ico.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- / header -->
+
+      <!-- search -->
+      <div class="search">
+        <div class="container">
+          <div class="search-body">
+            <div class="search-wrap">
+              <input type="text" placeholder="Пошук по сайту">
+              <div class="search-close">
+                <img src="./images/close-ico.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search -->
+
+      <!-- serv -->
+       <main class="">
+          <div class="top-page-info vac">
+            <div class="container" data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="100">
+              <div class="vac-top">
+                <h1>
+                  Вакансії
+                </h1>
+                <div class="vac-descr-top">
+                  В СЕК Еколоджи ми постійно зростаємо, вдосконалюємо процеси та відкриваємось до нового. Ми цінуємо розвиток, професіоналізм і командну роботу. Якщо ви поділяєте наші цінності, маєте відповідний досвід і бажання стати частиною нашої команди - будемо раді вашому відгуку. Ми з задоволенням розглянемо ваше резюме та обов’язково дамо зворотний зв'язок.
+
+                  <div class="send-mail">
+                    <span>
+                      Надсилайте резюме на:
+                    </span>
+                    <a class="vac-mail" href="#">staff@secgroup.com.ua</a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="actual-vac">
+            <div class="container">
+              <div class="section-tit" data-aos="fade-up"
+              data-aos-duration="700"
+              data-aos-delay="300">
+                <h2>
+                  Актуальні вакансії від нашої компанії:
+                </h2>
+              </div>
+
+              <div class="vac-list" data-aos="custom">
+                <!-- one -->
+                 <div class="one-vac show-modal" data-modal="vac-modal">
+                  <div class="one-vac-thumb">
+                    <img src="./images/vac-thumb.jpg" alt="">
+                  </div>
+                  <div class="one-vac-descr">
+                    <div class="one-vac-tit">
+                      Еколог-розробник документації в сфері управління відходами
+                    </div>
+                    <div class="one-vac-detal">
+                      <a href="#" class="detal-bt">Детальніше</a>
+                    </div>
+                  </div>
+                 </div>
+                <!-- / one -->
+                <!-- one -->
+                 <div class="one-vac show-modal" data-modal="vac-modal">
+                  <div class="one-vac-thumb">
+                    <img src="./images/vac-thumb.jpg" alt="">
+                  </div>
+                  <div class="one-vac-descr">
+                    <div class="one-vac-tit">
+                      Еколог-розробник документації в сфері управління відходами
+                    </div>
+                    <div class="one-vac-detal">
+                      <a href="#" class="detal-bt">Детальніше</a>
+                    </div>
+                  </div>
+                 </div>
+                <!-- / one -->
+                <!-- one -->
+                 <div class="one-vac show-modal" data-modal="vac-modal">
+                  <div class="one-vac-thumb">
+                    <img src="./images/vac-thumb.jpg" alt="">
+                  </div>
+                  <div class="one-vac-descr">
+                    <div class="one-vac-tit">
+                      Еколог-розробник документації в сфері управління відходами
+                    </div>
+                    <div class="one-vac-detal">
+                      <a href="#" class="detal-bt">Детальніше</a>
+                    </div>
+                  </div>
+                 </div>
+                <!-- / one -->
+                <!-- one -->
+                 <div class="one-vac show-modal" data-modal="vac-modal">
+                  <div class="one-vac-thumb">
+                    <img src="./images/vac-thumb.jpg" alt="">
+                  </div>
+                  <div class="one-vac-descr">
+                    <div class="one-vac-tit">
+                      Еколог-розробник документації в сфері управління відходами
+                    </div>
+                    <div class="one-vac-detal">
+                      <a href="#" class="detal-bt">Детальніше</a>
+                    </div>
+                  </div>
+                 </div>
+                <!-- / one -->
+                <!-- one -->
+                 <div class="one-vac show-modal" data-modal="vac-modal">
+                  <div class="one-vac-thumb">
+                    <img src="./images/vac-thumb.jpg" alt="">
+                  </div>
+                  <div class="one-vac-descr">
+                    <div class="one-vac-tit">
+                      Еколог-розробник документації в сфері управління відходами
+                    </div>
+                    <div class="one-vac-detal">
+                      <a href="#" class="detal-bt">Детальніше</a>
+                    </div>
+                  </div>
+                 </div>
+                <!-- / one -->
+              </div>
+            </div>
+          </div>
+
+        
+       </main>
+      <!-- serv -->
+    
+    
+      <!-- footer -->
+      <footer>
+        <div class="container">
+          <!-- footer-top -->
+          <div class="footer-top">
+            <div class="footer-top-left">
+              <div class="footer-logo">
+                <img src="./images/footer-logo.svg" alt="" />
+              </div>
+              <div class="slogan">Ваш надійний партнер в сфері екології</div>
+            </div>
+            <div class="footer-top-right">
+              <a href="#" class="third-bt">Oтримати консультацію</a>
+            </div>
+          </div>
+          <!-- / footer-top -->
+
+          <!-- footer serv -->
+          <div class="footer-serv">
+            <div class="footer-tit">Основні послуги</div>
+            <div class="footer-serv-in">
+              <ul>
+                <li>
+                  <a href="#"> Оцінка впливу на довкілля </a>
+                </li>
+                <li>
+                  <a href="#"> Дозвіл на викиди в атмосферне повітря </a>
+                </li>
+                <li>
+                  <a href="#"> Інтегрований довкіллєвий дозвіл </a>
+                </li>
+                <li>
+                  <a href="#"> Дозвіл на спеціальне водокористування </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Дозвіл на здійснення операцій з оброблення відходів
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> Післяпроектний моніторинг ОВД </a>
+                </li>
+              </ul>
+
+              <div class="foot-all-serv">
+                <a class="green-link" href="#">
+                  Переглянути всі послуги
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- / footer serv -->
+
+          <!-- footer-cont -->
+          <div class="footer-cont">
+            <div class="footer-cont-left">
+              <div class="footer-tit">Контактна інформація</div>
+              <div class="footer-cont-office">
+                <div class="footer-cont-top">
+                  Головний офіс:
+                </div>
+                <div class="footer-cont-office-lest">
+                    <div class="footer-cont-one-l">
+                      <div class="footer-cont-one-l-ico">
+                        <img src="./images/cont-ico-1.svg" alt="" />
+                      </div>
+                      <div class="footer-cont-one-l-name up">
+                        Київ, Просп. Соборності, 19, оф. 219 
+                      </div>
+                    </div>
+                    <div class="footer-cont-one-l">
+                      <div class="footer-cont-one-l-ico">
+                        <img src="./images/cont-ico-2.svg" alt="" />
+                      </div>
+                      <div class="footer-cont-one-l-name"><a href="#">+38 (044) 494-21-48</a></div>
+                    </div>
+                    <div class="footer-cont-one-l">
+                      <div class="footer-cont-one-l-ico">
+                        <img src="./images/cont-ico-3.svg" alt="" />
+                      </div>
+                      <div class="footer-cont-one-l-name"><a href="#">sales@eco.kiev.ua</a></div>
+                    </div>
+                    <div class="footer-cont-one-l">
+                      <div class="footer-cont-one-l-ico">
+                        <img src="./images/cont-ico-4.svg" alt="" />
+                      </div>
+                      <div class="footer-cont-one-l-name">Пн-Пт: 9:00–18:00</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-cont-right">
+              <div class="map-foot">
+                <img src="./images/map.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="regions">
+            <div class="regions-top">
+                Регіональні представництва:
+            </div>
+            <div class="regions-list">
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Дніпро
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (056) 767-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">dp@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Львів
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (032) 257-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">lviv@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Харків
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (057) 755-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">khar@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Одеса
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (048) 793-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">od@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Вінниця
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (056) 767-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">xx@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+              <!-- one -->
+              <div class="one-reg">
+                <div class="footer-cont-office-lest">
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-1.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name up">
+                      Полтава
+                    </div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-2.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">+38 (032) 257-00-31</a></div>
+                  </div>
+                  <div class="footer-cont-one-l">
+                    <div class="footer-cont-one-l-ico">
+                      <img src="./images/cont-ico-3.svg" alt="" />
+                    </div>
+                    <div class="footer-cont-one-l-name"><a href="#">xx@secgroup.com.ua</a></div>
+                  </div>
+                </div>
+              </div>
+              <!-- / one -->
+            </div>
+          </div>
+          <!-- footer-cont -->
+
+          <!-- other-links -->
+           <div class="footer-other-links">
+            <div class="left-other">
+              <ul>
+                <li>
+                  <a class="green-link" href="#">
+                    Політика конфіденційності
+                  </a>
+                </li>
+                <li>
+                  <a class="green-link" href="#">
+                    Політика обробки персональних даних
+                  </a>
+                </li>
+                <li>
+                  <a class="green-link" href="#">
+                    Угода користувача
+                  </a>
+                </li>
+                <li>
+                  <a class="green-link" href="#">
+                    Правила використання сайту
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="right-other">
+              <div class="foot-soc">
+                <ul>
+                  <li>
+                    <a class="soc-1" href="#">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 8C16 3.6 12.4 0 8 0C3.6 0 0 3.6 0 8C0 12 2.9 15.3 6.7 15.9V10.3H4.7V8H6.7V6.2C6.7 4.2 7.9 3.1 9.7 3.1C10.6 3.1 11.5 3.3 11.5 3.3V5.3H10.5C9.5 5.3 9.2 5.9 9.2 6.5V8H11.4L11 10.3H9.1V16C13.1 15.4 16 12 16 8Z" fill="white"/>
+                      </svg>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a class="soc-2" href="#">
+                      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.09992 5.7083C5.39487 3.83705 8.25885 2.60341 9.69185 2.00738C13.7834 0.30558 14.6335 0.00996026 15.1877 9.46359e-05C15.3095 -0.00194823 15.582 0.0282562 15.7586 0.171489C15.9076 0.292432 15.9486 0.455809 15.9683 0.570476C15.9879 0.685143 16.0123 0.946358 15.9929 1.15046C15.7712 3.48009 14.8118 9.13349 14.3237 11.7427C14.1172 12.8468 13.7105 13.217 13.3168 13.2532C12.4613 13.3319 11.8116 12.6878 10.9829 12.1446C9.68624 11.2946 8.95369 10.7654 7.69503 9.936C6.24042 8.97744 7.18338 8.4506 8.01236 7.58959C8.22931 7.36426 11.999 3.93546 12.0719 3.62441C12.0811 3.58551 12.0895 3.44051 12.0034 3.36394C11.9172 3.28737 11.7901 3.31355 11.6983 3.33438C11.5683 3.36389 9.4968 4.73307 5.48389 7.4419C4.89591 7.84565 4.36333 8.04237 3.88616 8.03207C3.36012 8.0207 2.34822 7.73463 1.59598 7.49011C0.673328 7.19019 -0.0599784 7.03162 0.00387615 6.52227C0.0371355 6.25697 0.402482 5.98564 1.09992 5.7083Z" fill="white"/>
+                      </svg>
+
+                    </a>
+                  </li>
+                  <li>
+                    <a class="soc-3" href="#">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6 2.3C12.1 0.8 10.1 0 8 0C3.6 0 0 3.6 0 8C0 9.4 0.400006 10.8 1.10001 12L0 16L4.20001 14.9C5.40001 15.5 6.7 15.9 8 15.9C12.4 15.9 16 12.3 16 7.9C16 5.8 15.1 3.8 13.6 2.3ZM8 14.6C6.8 14.6 5.60001 14.3 4.60001 13.7L4.39999 13.6L1.89999 14.3L2.60001 11.9L2.39999 11.6C1.69999 10.5 1.39999 9.3 1.39999 8.1C1.39999 4.5 4.4 1.5 8 1.5C9.8 1.5 11.4 2.2 12.7 3.4C14 4.7 14.6 6.3 14.6 8.1C14.6 11.6 11.7 14.6 8 14.6ZM11.6 9.6C11.4 9.5 10.4 9 10.2 9C10 8.9 9.89999 8.9 9.79999 9.1C9.69999 9.3 9.30001 9.7 9.20001 9.9C9.10001 10 8.99999 10 8.79999 10C8.59999 9.9 8.00001 9.7 7.20001 9C6.60001 8.5 6.20001 7.8 6.10001 7.6C6.00001 7.4 6.10001 7.3 6.20001 7.2C6.30001 7.1 6.4 7 6.5 6.9C6.6 6.8 6.60001 6.7 6.70001 6.6C6.80001 6.5 6.70001 6.4 6.70001 6.3C6.70001 6.2 6.30001 5.2 6.10001 4.8C6.00001 4.5 5.80001 4.5 5.70001 4.5C5.60001 4.5 5.49999 4.5 5.29999 4.5C5.19999 4.5 4.99999 4.5 4.79999 4.7C4.59999 4.9 4.10001 5.4 4.10001 6.4C4.10001 7.4 4.79999 8.3 4.89999 8.5C4.99999 8.6 6.29999 10.7 8.29999 11.5C9.99999 12.2 10.3 12 10.7 12C11.1 12 11.9 11.5 12 11.1C12.2 10.6 12.2 10.2 12.1 10.2C12 9.7 11.8 9.7 11.6 9.6Z" fill="white"/>
+                      </svg>
+
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+           </div>
+          <!-- other-links -->
+
+          <div class="foot-copy">
+                © 2025 SEC Ecology. Усі права захищено
+              </div>
+
+        </div>
+      </footer>
+      <!-- footer -->
+
+      <!-- modal -->
+       <div class="modal" id="cont-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-in">
+          <div class="modal-in-wrap">
+            <div class="modal-close">
+              <img src="./images/close-ico.svg" alt="">
+            </div>
+            <div class="cont-form-modal">
+              <div class="cont-form-modal-left">
+                <div class="cont-form-modal-logo">
+                  <img src="./images/logo.svg" alt="">
+                </div>
+                <div class="cont-form-modal-tit">
+                  Бажаєте надіслати нам запит?
+                </div>
+                <div class="cont-form-modal-info">
+                  Ми завжди на звязку- напишіть, і ми допоможемо!
+                </div>
+              </div>
+              <div class="cont-form-modal-right">
+                <div class="cont-form-modal-right-in">
+                   
+                    <!-- one inp -->
+                    <div class="form-cons-one">
+                      <input type="text" placeholder="Ваше ім’я">
+                    </div>
+                    <!-- one inp -->
+                    <!-- one inp -->
+                    <div class="form-cons-one">
+                      <input type="text" placeholder="Email">
+                    </div>
+                    <!-- one inp -->
+                    <!-- one inp -->
+                    <div class="form-cons-one reg">
+                      <input type="text" placeholder="Контактний телефон ">
+                    </div>
+                    <!-- one inp -->
+                  </div>
+                  <!-- one inp -->
+                  <div class="form-cons-one-are">
+                    <textarea name="" id="" placeholder="За бажанням, коротко опишіть Ваш запит"></textarea>
+                  </div>
+                  <!-- one inp -->
+                  <div class="send-form">
+                    <button class="prim-bt">Відправити</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      <!-- modal -->
+
+      <!-- modal -->
+       <div class="modal vac-modal" id="vac-modal" >
+        <div class="modal-overlay"></div>
+        <div class="modal-in">
+          <div class="modal-in-wrap">
+            
+            <div class="vac-modal-wrap">
+              <div class="vac-modal-wrap-top">
+                <i>
+                  <img src="./images/vac-modal-ico.svg" alt="">
+                </i>
+                <span>
+                  Еколог-розробник документації в сфері управління відходами
+                </span>
+
+                <div class="modal-close">
+                  <img src="./images/close-ico.svg" alt="">
+                </div>
+
+              </div>
+
+              <!-- vac body -->
+              <div class="vac-modal-body">
+                <!-- one -->
+                <div class="vac-some-info">
+                  <div class="vac-some-info-name">
+                    Про вакансію
+                  </div>
+                  <div class="vac-some-info-descr">
+                    <p>Aliquam et labore sed et unde cupiditate ab. Nam qui odit cupiditate dolores ratione fugiat nulla. Consectetur numquam tempore quibusdam. Cupiditate porro ratione et dignissimos quam.</p>
+                  </div>
+                </div>
+                <!-- / one -->
+                <!-- one -->
+                <div class="vac-some-info">
+                  <div class="vac-some-info-name">
+                    Основні обов’язки
+                  </div>
+                  <div class="vac-some-info-descr">
+                    <ul class="type-list-one">
+                      <li>Збір вихідних даних та розробка пакету документів для отримання дозволу на здійснення операцій з оброблення відходів;</li>
+                      <li>Ліцензії на поводження з небезпечними відходами, плани управління відходами для підприємств, декларації на утворення відходів;</li>
+                      <li>Консультування замовників та співробітників;</li>
+                      <li>За потреби — виїзд на об’єкти.</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- / one -->
+                <!-- one -->
+                <div class="vac-some-info">
+                  <div class="vac-some-info-name">
+                    Вимоги до кандидата
+                  </div>
+                  <div class="vac-some-info-descr">
+                      <ul class="type-list-two">
+                        <li>Відмінне знання законодавства та дозвільних процедур у сфері управління відходами;</li>
+                        <li>Практичний досвід від 2-х років;</li>
+                        <li>Додатковим плюсом будуть навички розробки документації по викидам, спеціальному водокористуванню, звітів ОВД (оцінка впливу на довкілля), МЗВ тощо.</li>
+                      </ul>
+                  </div>
+                </div>
+                <!-- / one -->
+                <!-- one -->
+                <div class="vac-some-info">
+                  <div class="vac-some-info-name">
+                    Умови співпраці
+                  </div>
+                  <div class="vac-some-info-descr">
+                    <div class="type-work">
+                      <div class="type-ico">
+                        <img src="./images/type-work-1.svg" alt="">
+                      </div>
+                      <div class="type-text">
+                        Можливість віддаленої роботи;
+                      </div>
+                    </div>
+                    <div class="type-work">
+                      <div class="type-ico">
+                        <img src="./images/type-work-2.svg" alt="">
+                      </div>
+                      <div class="type-text">
+                        Офіційне працевлаштування, договір.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- / one -->
+                <!-- one -->
+                <div class="vac-some-info">
+                  <div class="vac-some-info-name">
+                    Оплата
+                  </div>
+                  <div class="vac-some-info-descr">
+                    <div class="type-work">
+                      <div class="type-ico">
+                        <img src="./images/type-work-3.svg" alt="">
+                      </div>
+                      <div class="type-text">
+                        За результатами співбесіди
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- / one -->
+
+                <div class="vac-mail-mod">
+                    <div class="send-mail">
+                      <span>
+                        Надсилайте резюме на:
+                      </span>
+                      <a class="vac-mail" href="#">staff@secgroup.com.ua</a>
+                    </div>
+                </div>
+
+              </div>
+              <!-- / vac body -->
+
+              
+              
+            </div>
+          </div>
+        </div>
+       </div>
+      <!-- modal -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/init.js"></script>
+  </body>
+</html>
