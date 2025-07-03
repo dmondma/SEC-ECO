@@ -668,7 +668,7 @@ h3, .h3 {
 }
 
 .main-serv {
-    padding-top: 72px;
+    //padding-top: 72px;
 }
 .serv-aside {
     background-color: #01579B;
@@ -679,6 +679,10 @@ h3, .h3 {
     width: calc(330px + (100% - var(--container-max)) / 2 + 15px);
     padding-left: calc((100% - var(--container-max)) / 2 + 15px);
     z-index: 9;
+
+    @media (max-width: 966px) {
+        display: none;
+    }
 }
 .serv-aside-in {
 
@@ -811,6 +815,10 @@ h3, .h3 {
     padding-top: 40px;
     position: relative;
 
+    @media (max-width: 966px) {
+        padding-left: 0;
+    }
+
     &:before {
         content: '';
         position: absolute;
@@ -820,6 +828,10 @@ h3, .h3 {
         width: 442px;
         height: 300px;
         z-index: -1;
+
+        @media (max-width: 966px) {
+            display: none;
+        }
     }
 }
 .one-serv-main {
@@ -852,6 +864,7 @@ h3, .h3 {
 
 	  @media (max-width: 550px) {
 		background-position: left top;
+        padding-top: 1px;
 	  }
 	  
     }
@@ -863,5 +876,6 @@ h3, .h3 {
         font-size: 20px;
         line-height: 28px;
         margin-bottom: 24px;
+        font-weight: 600;
     }
 }
