@@ -672,10 +672,11 @@ h3, .h3 {
 }
 .serv-aside {
     background-color: #01579B;
-    position: fixed;
+    position: sticky;
     top: 72px;
     left: 0;
-    bottom: 0;
+    bottom: 0px;
+    height: 100vh;
     width: calc(330px + (100% - var(--container-max)) / 2 + 15px);
     padding-left: calc((100% - var(--container-max)) / 2 + 15px);
     z-index: 9;
@@ -835,7 +836,7 @@ h3, .h3 {
     }
 }
 .one-serv-main {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     ul {
     display: flex;
     gap: 14px;
