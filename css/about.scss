@@ -251,6 +251,22 @@
     font-size: 16px;
     line-height: 24px;
 }
+
+.why-ord {
+    padding-top: 20px;
+    display: flex;
+    a {
+        height: 48px;
+        width: auto;
+        font-size: 14px;
+        padding-right: 20px;
+        padding-left: 48px;
+        background-image: url(../images/order-about.svg);
+        background-repeat: no-repeat;
+        background-position: 20px center;
+    }
+}
+
 .why-eco-one-thumb {
     overflow: hidden;
     width: 50%;

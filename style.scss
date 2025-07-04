@@ -280,10 +280,9 @@ header {
           text-decoration: none;
           font-size: 14px;
 
-		  @media (max-width: 1150px) {
-			padding: 13px 24px;
-			color: #1B5E20;
-		  }
+          @media (max-width: 1150px) {
+          padding: 13px 24px;
+          }
 
           &:after {
             content: "";
@@ -649,6 +648,18 @@ header {
     width: 100%;
   }
 }
+
+.home {
+  .hero-bt {
+    .prim-bt, .third-bt {
+      @media (max-width: 966px) {
+        height: 60px;
+      }
+      
+    }
+  }
+}
+
 .prim-bt {
   font-size: 16px;
   font-weight: 600;
@@ -668,7 +679,7 @@ header {
   font-weight: 600;
   
   @media (max-width: 550px) {
-    height: 48px;
+    //height: 48px;
     padding: 0 24px;
     // font-size: 14px;
   }
@@ -796,10 +807,14 @@ header {
     content: "";
     position: absolute;
     background: linear-gradient(90deg, #e3f2fd 0%, #f1f8e9 100%);
-    top: 438px;
+    top: 373px;
     left: 0;
     width: 100%;
     bottom: 0;
+
+    @media (max-width: 966px) {
+      display: none;
+    }
   }
 
   .container {
@@ -826,10 +841,11 @@ header {
     line-height: 40px;
     text-transform: uppercase;
 
-	@media (max-width: 550px) {
-		font-size: 20px;
-		line-height: 28px;
-	}
+    @media (max-width: 550px) {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 600;
+    }
   }
 }
 .serv-list {
@@ -862,9 +878,9 @@ header {
 }
 
 .one-serv {
-  padding: 20px 20px 20px 62px;
+  padding:15px 20px 15px 62px;
   width: calc(50% - 0.5px);
-  min-height: 104px;
+  min-height: 80px;
   position: relative;
   text-decoration: none;
   color: #1f1f24;
@@ -882,56 +898,93 @@ header {
 
   &:first-child {
     background-color: #d0edc4;
+
+    @media (max-width: 550px) {
+      order: 1;
+    }
   }
 
   &:nth-child(2) {
     background-color: #c5e5d2;
+
+    @media (max-width: 550px) {
+      order: 2;
+    }
   }
 
   &:nth-child(3) {
     background-color: #b9dee1;
+
+    @media (max-width: 550px) {
+      order: 10;
+      background-color: #98C1F0;
+    }
   }
 
   &:nth-child(4) {
     background-color: #b0d8ed;
+
+    @media (max-width: 550px) {
+      order: 6;
+      background-color: #A2C2E7;
+    }
   }
 
   &:nth-child(5) {
     background-color: #aecdeb;
+
+    @media (max-width: 550px) {
+      order: 5;
+      background-color: #AECDEB;
+    }
   }
 
   &:nth-child(6) {
     background-color: #a2c2e7;
+
+    @media (max-width: 550px) {
+      order: 3;
+      background-color: #b9dee1;
+    }
   }
 
   &:nth-child(7) {
     background-color: #98c1f0;
 
-    @media (max-width: 966px) {
-      display: none;
+    @media (max-width: 550px) {
+      order: 10;
     }
   }
 
   &:nth-child(8) {
     background-color: #8eb2db;
-	
-    @media (max-width: 966px) {
-      display: none;
+
+    @media (max-width: 550px) {
+      order: 4;
+      background-color: #B0D8ED;
     }
   }
 
   &:nth-child(9) {
     background-color: #8eb2db;
-	
-    @media (max-width: 966px) {
-      display: none;
+
+    @media (max-width: 550px) {
+      order: 10;
+      background-color: #8EB2DB;
     }
+
   }
 }
 .one-serv-ico {
   position: absolute;
   top: 20px;
   left: 20px;
+
+  img {
+    @media (max-width: 550px) {
+      width: 24px;
+    }
+  }
 }
 .one-serv-tit {
   font-size: 20px;
@@ -1014,12 +1067,14 @@ header {
   background-size: cover;
 
   @media (max-width: 966px) {
-	margin-bottom: 60px;
+	  margin-bottom: 60px;
   }
 
   @media (max-width: 550px) {
-	padding: 40px;
-	margin-bottom: 40px;
+    padding: 40px;
+    margin-bottom: 40px;
+    margin-left: -15px;
+    width: calc(100vw + 30px);
   }
 
   &-in {
@@ -1081,6 +1136,7 @@ header {
 	font-size: 20px;
 	line-height: 28px;
 	font-weight: 600;
+  padding-right: 64px;
   }
 }
 .fast-telegram-bt {
@@ -1106,8 +1162,10 @@ header {
   position: relative;
 
   @media (max-width: 550px) {
-	height: 48px;
-	padding: 8px 62px 8px 24px;
+    height: 48px;
+    padding: 8px 62px 8px 24px;
+    width: 244px;
+    font-size: 14px;
   }
 
   i {
@@ -1117,6 +1175,7 @@ header {
 
 	@media (max-width: 550px) {
 		bottom: -55px;
+    right: 83px;
 	}
 
     svg {
@@ -1315,6 +1374,12 @@ header {
 		position: relative;
 		display: block;
 
+    &:first-child {
+      @media (max-width: 966px) {
+        margin-top: 0;
+      }
+    }
+
 		&:after {
 			content: "";
 			position: absolute;
@@ -1327,6 +1392,10 @@ header {
 			opacity: 0;
 			transition: all 0.3s;
 			margin-top: -30px;
+
+      @media (max-width: 966px) {
+        background-image: url(./images/more-arrow-white.svg);
+      }
 		}
 
 		span {
@@ -1337,9 +1406,15 @@ header {
 			background-color: #fff;
 			border-bottom: 1px solid #EDEDED;
 
+      @media (max-width: 966px) {
+        background: linear-gradient(90deg, #0093D5 0%, #50C659 100%);
+        color: #fff;
+        font-weight: 500;
+      }
+
 			&:after {
-			opacity: 1;
-			margin-top: 0px;
+        opacity: 1;
+        margin-top: 0px;
 			}
 		}
 
@@ -1359,6 +1434,10 @@ header {
 
   @media (max-width: 966px) {
 	padding: 0;
+  }
+
+  @media (max-width: 550px) {
+    box-shadow: none;
   }
 
   .one-tab-serv {
@@ -1404,6 +1483,10 @@ header {
 }
 .more-serv-descr-tit {
   margin-bottom: 24px;
+
+  @media (max-width: 966px) {
+    display: none;
+  }
 
   h3 {
     font-size: 28px;
@@ -1536,6 +1619,14 @@ header {
   line-height: 24px;
   font-weight: 600;
   margin-bottom: 4px;
+
+  br {
+    display: none;
+
+    @media (max-width: 550px) {
+      display: block;
+    }
+  }
 }
 .who-about {
   font-size: 12px;
@@ -1545,6 +1636,8 @@ header {
   .prim-bt {
     @media (max-width: 550px) {
       padding: 0 14px;
+      width: 100%;
+      height: 48px;
     }
   }
 }
@@ -1789,6 +1882,11 @@ header {
 #map {
   padding: 60px 0;
   overflow: hidden;
+
+  @media (max-width: 550px) {
+    padding: 40px 0 23px;
+    background-color: #F5F6FA;
+  }
 }
 
 .map {
@@ -1924,7 +2022,7 @@ header {
     }
 
     @media (max-width: 550px) {
-      bottom: 120px;
+      bottom: 132px;
     }
   }
 }
@@ -2023,7 +2121,11 @@ input {
     top: 50%;
     transform: translate(0, -50%);
     color: #F50057;
-    margin-top: -5px;
+    margin-top: -16px;
+
+    @media (max-width: px) {
+    
+    }
   }
 
   input {
@@ -2033,6 +2135,12 @@ input {
 .prim-bt {
 }
 
+#logos {
+  @media (max-width: 550px) {
+    padding-top: 70px;
+  }
+}
+
 .logos {
   display: flex;
   gap: 1px;
@@ -2040,7 +2148,8 @@ input {
   margin-bottom: 80px;
 
   @media (max-width: 550px) {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+    background-color: #fff;
   }
 
   // &.aos-animate .one-logo {
@@ -2085,7 +2194,7 @@ input {
   }
 
   @media (max-width: 550px) {
-    padding: 14px;
+    padding: 10px;
   }
 }
 
@@ -2112,6 +2221,7 @@ input {
   @media (max-width: 550px) {
     width: calc(100% + 24px);
     margin-left: -12px;
+    margin-top: 40px;
   }
 
   .swiper-slide {
@@ -2155,9 +2265,13 @@ input {
 .one-feed-logo {
   margin-bottom: 20px;
   height: 40px;
+  display: flex;
+  align-items: center;
 
   img {
+   
     max-height: 40px;
+    
   }
 }
 .one-feed-text {
@@ -2439,7 +2553,7 @@ input {
 
   @media (max-width: 550px) {
     margin-top: 40px;
-    padding: 80px 0 60px;
+    padding: 80px 0 110px;
     margin-bottom: 40px;
   }
 }
@@ -2642,6 +2756,12 @@ footer {
     flex-direction: column;
     gap: 24px;
   }
+
+  @media (max-width: 550px) {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+  }
 }
 .footer-top-left {
   display: flex;
@@ -2655,6 +2775,11 @@ footer {
   line-height: 24px;
 }
 .footer-top-right {
+  .third-bt {
+    @media (max-width: 550px) {
+      height: 60px;
+    }
+  }
 }
 .sec-bt {
 }
@@ -2672,6 +2797,10 @@ footer {
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 24px;
+
+  @media (max-width: 550px) {
+    font-size: 16px;
+  }
 }
 .footer-serv-in {
 
@@ -2685,6 +2814,10 @@ footer {
 
     @media (max-width: 966px) {
       flex-direction: column;
+    }
+
+    @media (max-width: 550px) {
+      gap: 24px;
     }
 
     li {
@@ -2811,6 +2944,14 @@ footer {
       height: 284px;
     }
   }
+
+  @media (max-width: 550px) {
+    height: 204px;
+
+    img {
+      height: 204px;
+    }
+  }
 }
 
 .regions {
@@ -2870,7 +3011,7 @@ footer {
 }
 .left-other {
   @media (max-width: 550px) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   ul {
     li {
