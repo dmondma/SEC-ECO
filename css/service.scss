@@ -861,6 +861,20 @@ h3, .h3 {
             display: none;
         }
     }
+
+    .fast-telegram {
+        padding: 40px;
+
+        .fast-telegram-in {
+            gap: 24px;
+        }
+
+        .fast-telegram-tit {
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 500;
+        }
+    }
 }
 .one-serv-main {
     padding-bottom: 40px;
