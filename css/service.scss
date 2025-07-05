@@ -394,8 +394,18 @@ h3, .h3 {
     }
 
     @media (min-width: 550px) {
-        border-top: 4px solid #0093D5;
+        //border-top: 4px solid #0093D5;
         box-shadow: 0px 25px 50px -12px rgba(31, 31, 36, 0.25), 0px 0px 15px rgba(31, 31, 36, 0.07);
+    }
+
+     &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 4px;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(36.87deg, #0093d5 5.36%, #50c659 94.64%);
     }
     
 }
@@ -505,7 +515,7 @@ h3, .h3 {
 
 #faq {
     &.in-serv {
-        margin-top: -193px;
+        margin-top: -139px;
         margin-bottom: 0;
         padding-bottom: 172px;
 
@@ -600,7 +610,8 @@ h3, .h3 {
 .one-serv-cust {
   padding: 20px 20px 20px 62px;
   width: calc(50% - 0.5px);
-  min-height: 160px;
+  //min-height: 160px;
+  min-height: 106px;
   position: relative;
   text-decoration: none;
   color: #1f1f24;
@@ -613,7 +624,8 @@ h3, .h3 {
   }
   
   @media (max-width: 550px) {
-	min-height: 120px;
+	min-height: 94px;
+    padding: 15px 20px 15px 62px;
   }
 
   &:first-child {
@@ -842,6 +854,7 @@ h3, .h3 {
     padding-left: calc(330px + 40px);
     padding-top: 40px;
     position: relative;
+    padding-bottom: 40px;
 
     @media (max-width: 966px) {
         padding-left: 0;
@@ -864,6 +877,7 @@ h3, .h3 {
 
     .fast-telegram {
         padding: 40px;
+        margin-bottom: 0;
 
         .fast-telegram-in {
             gap: 24px;
