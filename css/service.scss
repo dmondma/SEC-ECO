@@ -4,6 +4,14 @@
         text-align: justify;
     }
 }
+
+.no-just-mob {
+    p {
+        @media (max-width: 550px) {
+            text-align: left;
+        }
+    }
+}
 .font-16 {
     p {
     font-size: 16px;
