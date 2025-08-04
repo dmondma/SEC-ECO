@@ -315,4 +315,11 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function() {
+  $('.acc-ins-one-top').on('click', function() {
+    const $parent = $(this).closest('.acc-ins-one');
+    $parent.find('.acc-ins-one-bot').slideToggle(200);
+    $parent.toggleClass('open');
+  });
+});
 
