@@ -256,7 +256,7 @@
     background-color: #fff;
 
     &.no-bg {
-        background: none;
+        background: none !important;
     }
 
     &:after {
