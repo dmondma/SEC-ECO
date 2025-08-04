@@ -320,6 +320,10 @@
             margin-top: -46px;
         }
     }
+
+    .leave-order {
+        padding-top: 7px;
+    }
 }
 
 .etaps-in {
@@ -1275,7 +1279,20 @@
         h3 {
             margin-bottom: 16px;
         }
-}
+    }
+
+    ol.style-2 {
+        margin-bottom: 25px;
+    }
+
+    #text-type.type-1 {
+        padding: 78px 0 40px;
+    }
+
+    #etaps {
+        padding-top: 0;
+    }
+
 }
 
 #rec-scale {
@@ -1326,6 +1343,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
         min-height: 100%;
+        max-width: inherit;
     }
 }
 
@@ -1352,6 +1370,12 @@
 .text-type-1-wrap {
     ul {
         margin-bottom: 32px;
+    }
+
+    ol {
+        ul {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -1432,5 +1456,26 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
+
+    &.sec {
+        margin-bottom: 16px;
+    }
+}
+
+.type-sub-tit-bg {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    span {
+        background-color: rgba(244,191,79,.4);
+    }
+}
+
+.prim {
+    margin-top: -14px;
+    font-size: 13px;
+    padding-left: 24px;
+    margin-bottom: 25px;
 }
